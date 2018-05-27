@@ -1,0 +1,20 @@
+---
+- name: Install and Configure Kubernetes Master
+  hosts: all   
+  tasks:
+    - name: Install Prerequisites
+      script: scripts/01_prereq.sh
+      ignore_errors: true
+    - name: Clone the scripts repo
+      script: scripts/02_clone.sh
+      ignore_errors: true
+    - name: Install the binaries
+      script: scripts/03_install_kube.sh
+    - name: Install CNI Plugins
+      script: scripts/04_install_cni_plugins.sh
+    - name: Configure Certificates
+      script: scripts/05_generate_certificate.sh
+    - name: Prepare Manifests & Addons
+      script: scripts/06_configure_manifest.sh
+    - name: Configure & Run Kubernetes
+      script: scripts/07_run_kube.sh

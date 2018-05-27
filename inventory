@@ -1,0 +1,8 @@
+master ansible_ssh_host=k8s-master.vm.local 
+
+[all:vars]
+ansible_connection=ssh
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant
+
+
