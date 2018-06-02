@@ -8,7 +8,7 @@ cd ~/kube
 ./configure-kubectl.sh $MASTER_IP
 
 # Now, copy the file to where the pods will later expect it to be:
-mkdir ~/kube/kubelet
+mkdir -p ~/kube/kubelet
 sudo cp ~/.kube/config ~/kube/kubelet/
 
 # Run kubelet - The Kubernetes "client", kub
