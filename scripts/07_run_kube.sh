@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Config and run services
 export MASTER_IP=`ifconfig ens32 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
 

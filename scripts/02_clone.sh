@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Clone the scripts
 mkdir -p ~/kube
 mkdir -p ~/kube/bin

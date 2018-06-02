@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install CNI plugins
 DOWNLOAD_DIR="${HOME}/kube/cni-plugins"
 CNI_BIN="/opt/cni/bin/"
